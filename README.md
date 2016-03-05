@@ -1,15 +1,16 @@
 # Atlantic.Net Cloud API - PHP Class
 
- Category	PHP API Class  
- Package	AnetCloud  
- Author		Stephen Flynn <sflynn@datai.net>, <sflynn@atlantic.net>  
- Link  		https://github.com/sflynn-anet/anet-php-api-class  
- Version	1.1  
+ * Category:	PHP API Class
+ * Package:	AnetCloud
+ * Author:	Stephen Flynn <sflynn@datai.net>, <sflynn@atlantic.net>
+ * Link:  	https://github.com/sflynn-anet/anet-php-api-class
+ * Version:	1.1
  
- 
+
+
 ### Example Code
 
-```php
+```
 require_once("anetcloud.class.php");
 
 define('APIKEY', '<%API-KEY%>');
