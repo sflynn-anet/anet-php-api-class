@@ -2,10 +2,10 @@
 /**
  * Atlantic.Net Cloud VPS Hosting API Class
  *
- * @category	
+ * @category	PHP API Class
  * @package		AnetCloud
- * @author		Stephen Flynn <sflynn@datai.net>
- * @link  		
+ * @author		Stephen Flynn <sflynn@datai.net>, <sflynn@atlantic.net>
+ * @link  		https://github.com/sflynn-anet/anet-php-api-class
  * @version		1.1
  * 
  *
@@ -49,12 +49,12 @@
 	 * Atlantic.Net Datacenter Locations
 	 */
 	private static $_locations = array(
-		'USEAST1',		// Orlando, FL
-		'USEAST2',		// New York, NY
-		'USCENTRAL1',	// Dallas, TX
-		'USWEST1',		// San Francisco, CA
-		'CAEAST1',		// Toronto, ON
-		'EUWEST1'		// London, UK
+		'USEAST1',      // Orlando, FL
+		'USEAST2',      // New York, NY
+		'USCENTRAL1',   // Dallas, TX
+		'USWEST1',      // San Francisco, CA
+		'CAEAST1',      // Toronto, ON
+		'EUWEST1'       // London, UK
 	);
 	
 	/**
@@ -407,8 +407,7 @@
 
 		$response = $this->http_post($data, $output);
 		$ssh_keys = $response['list-sshkeysresponse']['KeysSet'];
-		
-		## return $this->http_post($data, $output);
+
 		return $ssh_keys;
 	}
 	
@@ -493,7 +492,7 @@
 			return com_create_guid();
 		} else {
 			
-			mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
+			mt_srand((double)microtime()*10000); //optional for php 4.2.0 and up.
 			$charid = strtoupper(md5(uniqid(rand(), true)));
 			
 			$uuid = NULL;

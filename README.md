@@ -1,5 +1,11 @@
-Atlantic.Net Cloud API - PHP Class
-======
+# Atlantic.Net Cloud API - PHP Class
+
+ Category	PHP API Class
+ Package	AnetCloud
+ Author		Stephen Flynn <sflynn@datai.net>, <sflynn@atlantic.net>
+ Link  		https://github.com/sflynn-anet/anet-php-api-class
+ Version	1.1
+
 
 ### Example Code
 
@@ -18,7 +24,7 @@ print_r($instances);
 /** LIST IMAGES EXAMPLE **/
 $images = $anet->get_images();
 $imageList = isset($images['describe-imageresponse']['imagesset']) ? $images['describe-imageresponse']['imagesset'] : false;
-# print_r($images);
+print_r($images);
 
 if($imageList !== false) {
 	foreach($imageList as $img) {
